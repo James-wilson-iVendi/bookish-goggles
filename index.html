@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Intro -->
+				<section>
+						<img src="/images/1_LDIJxbCMKFaXpqgPO2rMPw.gif" class="demo-logo">
+					
+					<h3>Front-End Tooling for the Webshops Internal Admin UI</h3>
+					<p>
+						<small><a href="https://github.com/iVendi/webshops-internal-admin">https://github.com/iVendi/webshops-internal-admin</a></small>
+					</p>
+				</section>
+
+				<!-- Disclaimer -->
+				<section>
+					<h2>
+						Disclaimer
+					</h2>
+					<ul>
+						<li class="fragment">None of these tools will make you a better developer...<span class="fragment">probably.</span></li>					
+						<li class="fragment">Different projects require different tools.</li>
+						<li class="fragment">I'll probably change my mind about half this stuff in 6 months time.</li>
+					</ul>
+				</section>
+
+				<!-- Snowpack -->
+				<section>
+					<section>
+						<h2>Snowpack</h2>
+						<blockquote cite="https://www.snowpack.dev/">
+							&ldquo;Snowpack is a lightning-fast frontend build tool, designed for the modern web.&rdquo;
+						</blockquote>
+					</section>
+					<section>
+						<h3>Snowpack looks after</h3>
+						<ul>
+							<li>Dev server</li>
+							<li>Code compilation
+								<ul>
+									<li>JSX</li>
+									<li>TypeScript</li>
+									<li>Sass Modules</li>
+								</ul>
+							</li>
+							<li>Build pipeline</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Pros</h3>
+						<ul>
+							<li class="fragment">Fast startup</li>
+							<li class="fragment">Fast Refresh</li>
+							<li class="fragment">Lightweight</li>
+							<li class="fragment">Decent plugin ecosystem</li>
+						</ul>
+						<hr />
+						<h3>Cons</h3>
+						<ul>
+							<li class="fragment">Doesn't like it when files are renamed or removed</li>
+							<li class="fragment">Not as a mature as others e.g. WebPack</li>
+							<li class="fragment">Bundling a bit confusing at first</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- Redux & Redux Toolkit -->
+				<section>
+					<section>
+						<h2>Redux Toolkit</h2>
+						<blockquote cite="https://redux-toolkit.js.org/">
+							&ldquo;The official, opinionated, batteries-included toolset for efficient Redux development&rdquo;
+						</blockquote>
+					</section>
+					<section>
+						<h3>Pros</h3>
+						<ul>
+							<li class="fragment">Reduces boilerplate</li>
+							<li class="fragment">Immer for working with immutable state</li>
+							<li class="fragment">Sensible middleware included</li>
+							<li class="fragment">Good TypeScript support</li>
+						</ul>
+
+						<hr />
+
+						<h3>Cons</h3>
+						<ul>
+							<li class="fragment">Opinionated</li>
+							<li class="fragment">Still just Redux i.e. if you fundamentally dislike Redux this probably won't change that.</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- React Bootstrap --->
+				<section>
+					<section>
+						<h2>React Bootstrap</h2>
+						<blockquote cite="https://react-bootstrap.github.io/">
+							&ldquo;The most popular front-end framework
+							Rebuilt for React.&rdquo;
+						</blockquote>
+					</section>
+					<section>
+						<h3>We also use...</h3>
+						<ul class="fragment">
+							<li>react-select</li>
+							<li>react-toastify</li>
+							<li>react-router</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Pros</h2>
+						<ul span class="fragment">
+							<li>I don't want to try and design the perfect button</li>
+							<li>Good docs<span class="fragment">...that I don't have to maintain</span></li>
+							<li>Good test coverage<span class="fragment">...that I don't have to maintain</span></li>
+							<li>Lets you focus on the business logic</li>
+						</ul>
+						<hr />
+						<h3>Cons</h3>
+						<ul span class="fragment">
+							<li>Bloat</li>
+							<li>You might need something custom</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- honorable mentions -->
+				<section>
+					<section>
+						<h2>honorable mentions</h2>
+					</section>
+					<section>
+						<h3>React Hook Form</h3>
+						<blockquote cite="https://react-hook-form.com/">
+							&ldquo;Performant, flexible and extensible forms with easy-to-use validation.&rdquo;
+						</blockquote>
+					</section>
+					<section>
+						<h3>Testing</h3>
+						<p>Jest for unit testing pure functions/components.</p>
+						<p>Cypress for integration testing and anything else.</p>
+					</section>
+					<section>
+						<p>ESlint, Prettier, pre commit hook, GitHub actions...</p>
+					</section>
+				</section>
+
+				<!-- TypeScript -->
+				<section>
+					<section>
+						<h2>TypeScript</h2>
+						<blockquote cite="https://www.typescriptlang.org/">
+							&ldquo;Typed JavaScript at Any Scale.&rdquo;
+						</blockquote>
+					</section>
+					<section>
+						<h3>What we use TypeScript for</h3>
+						<ul>
+							<li class="fragment">Defining the shape of our Redux store</li>
+							<li class="fragment">Defining what props a component accepts</li>
+							<li class="fragment">Defining the arguments and return type of functions</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Bonus TypeScript bits</h2>
+					</section>
+					<section>
+						<h3>Indexed Access Types</h3>
+						<pre data-id="code-iat"><code data-trim data-line-numbers="|6|19" class="ts">
+							// .../dealerships/types.ts
+							export interface Dealership {
+							  displayName?: string;
+							  dealershipId: string;
+							  idString: string;
+							  id: string;
+							  version?: any;
+						   createdAt: Date;
+							  updatedAt: Date;
+							  readModelUpdatedAt: Date;
+							  previousStatus?: 'draft' | 'published';
+							}
+
+							// ...features/dealerships/dealershipsSlice.ts
+							import type { Dealership } from '../types';
+
+							interface CancelDealerShipArg {
+								webshopId: Webshop['id'];
+								dealershipId: Dealership['id'];
+							}
+						</code></pre>
+					</section>
+					<section>
+						<h3>Type Aliases</h3>
+						<pre data-id="code-iat"><code data-trim data-line-numbers="|2-8|9" class="ts">
+							// ...sections/edit/editServices.ts
+							type GetWebshop = (
+							  id: string,
+							  init?: RequestInit,
+							) => Promise<{
+							  webshop: Webshop;
+							  errorMessages?: any;
+							}>;
+							export const getWebshop: GetWebshop = async (id, init = {}) => {
+							  const endpoint = getWebshopEndpoint(id);
+
+							  const response = await fetchWithLogging(endpoint, init, {
+							    method: 'getWebshop',
+							  });
+							  return response.json();
+							};
+						</code></pre>
+					</section>
+					<section>
+						<h3>Generics</h3>
+						<pre data-id="code-iat"><code data-trim data-line-numbers="|2" class="ts"><script type="text/template">
+// ...features/dealerships/dealershipsSlice.ts
+type Remove = <T>(predicate: (x: T) => boolean, arr: T[]) => void;
+const remove: Remove = (predicate, arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (predicate(arr[i])) {
+      arr.splice(i, 1);
+    }
+  }
+};
+							</script>
+							</code></pre>
+					</section>
+					<section>
+						<h3>Utility Types</h3>
+						<pre data-id="code-iat"><code data-trim data-line-numbers="|4" class="ts"><script type="text/template">
+							// ...edit/components/external-link/ExternalLink.tsx
+							import Button, { ButtonProps } from 'react-bootstrap/Button';
+							
+							type Props = Omit<ButtonProps, 'target'> & {
+							  icon?: 'white' | 'black';
+							};
+														</script>
+														</code></pre>
+					</section>
+					<section>
+						<h3>Pros</h3>
+						<ul>
+							<li class="fragment">Encourages defensive programing</li>
+							<li class="fragment">Compile time type checking</li>
+							<li class="fragment">Self documenting code</li>
+							<li class="fragment">IDE integration i.e. developer experience</li>
+						</ul>
+
+						<hr />
+						<h3>Cons</h3>
+						<ul>
+							<li class="fragment">Defensive programing can be a pain</li>
+							<li class="fragment">Learning curve</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+						<img src="/images/S2A7.gif" class="demo-logo">
+					
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
